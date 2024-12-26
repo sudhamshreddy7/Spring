@@ -41,3 +41,15 @@ Response DTO: It is responsible to map the object data to response. Object to JS
 
 # getting_started_with_spring follows the above layered archtecture
 to test the application just run athe application and hit this link http://localhost:8080/payments/100
+
+# Maven
+<b>What is Maven?</b>
+
+1. It is project management tool. Which developers is:
+<b>Build generation</b>
+<b>Dependency resolution</b>
+<b>Documentation</b>
+
+
+
+
