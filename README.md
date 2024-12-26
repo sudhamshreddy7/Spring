@@ -54,6 +54,8 @@ Documentation</br></b>
 
 ## Maven Build cycle:
 
+<img width="1346" alt="image" src="https://github.com/user-attachments/assets/750d1b3f-c751-44b7-b516-3003d0b06e3b" />
+
 
 
 
