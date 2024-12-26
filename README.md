@@ -49,6 +49,10 @@ to test the application just run athe application and hit this link http://local
 <b>Build generation</br>
 Dependency resolution</br>
 Documentation</br></b>
+2. Maven uses POM(Project Object Model) to achieve the above
+3. Every POM contains parent POM. If there is no parent POM then by default inherits Super POM(which is like Object class in Java).
+
+## Maven Build cycle:
 
 
 
