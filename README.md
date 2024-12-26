@@ -61,6 +61,15 @@ Documentation</br></b>
 
 ![image](https://github.com/user-attachments/assets/66ad0b38-3530-4d08-a9bc-7f1e49105d07)
 
+@RestController and @Controller does the same thing.</br>
+@RestController eleminates a lot of boiler code such as @ResponseBody</br> 
+@RestController = @Controller + @ResponseBody</br>
+<b>@ResponseBody 
+### 1. @Controller:
+<p>
+It handles incoming HTTP requests.
+</p>
 
+### 2. RequestParam:
 
 
