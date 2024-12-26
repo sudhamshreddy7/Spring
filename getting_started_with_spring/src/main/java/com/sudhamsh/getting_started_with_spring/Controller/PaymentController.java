@@ -5,6 +5,7 @@ import com.sudhamsh.getting_started_with_spring.DTO.PaymentResponse;
 import com.sudhamsh.getting_started_with_spring.Service.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.DataBinder;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -13,6 +14,12 @@ public class PaymentController {
 
     @Autowired
     PaymentService paymentService;
+
+    @InitBinder
+    protected void initBinder(DataBinder binder){
+        binder.registerCustomEditor(String.class,"client",new ClientNamePropertyEditor());
+    }
+
 
     @GetMapping("/{id}")
     public ResponseEntity<PaymentResponse> getPaymentById(@PathVariable Long id, @RequestParam (name="client") String name){

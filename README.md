@@ -78,3 +78,13 @@ By default required is set to true.</p>
 To test run the application and the below url</br>
 
 http://localhost:8080/payments/100?client=sudhamsh
+
+<p>By Default Spring typecast the parameters into data types such as int, float, boolean ,String ,etc but to convert the parameter into custom data(date) you need to use propertyEditor.  </p>
+<p>to do such preprocessing we use intiBinder to preprocess the input data </p>
+
+### 3. PathVariable:
+<p>Pathvariables are similar to Parameters  </p>
+<ul>
+    <li>Example of path parameter is /api?id=123. Here id is Path parameter and 123 is its value.</li>
+    <li>example of path variable is /api/fetchData/123. Here 123 is path variable </li>
+</ul>
