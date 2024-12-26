@@ -71,5 +71,6 @@ It handles incoming HTTP requests.
 </p>
 
 ### 2. RequestParam:
+<img width="1193" alt="Screenshot 2024-12-26 at 1 58 27 PM" src="https://github.com/user-attachments/assets/a422c8ac-2511-4b91-9f1b-12d55fbd5517" />
 
 
