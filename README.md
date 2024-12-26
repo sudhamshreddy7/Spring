@@ -46,9 +46,9 @@ to test the application just run athe application and hit this link http://local
 <b>What is Maven?</b>
 
 1. It is project management tool. Which developers is:
-<b>Build generation</b>
-<b>Dependency resolution</b>
-<b>Documentation</b>
+<b>Build generation</br>
+Dependency resolution</br>
+Documentation</br></b>
 
 
 
