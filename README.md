@@ -99,12 +99,17 @@ There are two different ways to create a bean.
 @Component:<br>
 </li>
 <p>Annotations such as @Controller, @Service uses @Component to create Beans</p>
-Other Annotations which uses @Component are @Repository,@RequestMapping,@PutMapping,@GetMapping etc.
+Other Annotations which uses @Component are @Repository,@RequestMapping,@PutMapping,@GetMapping etc.<br>
+To assign or bind a bean to a variable we use @Autowired<br>
+<img width="284" alt="Screenshot 2024-12-27 at 5 56 36 PM" src="https://github.com/user-attachments/assets/c00488d0-229f-42de-b56a-3397a28fabc7" />
+
 
 
 <li>
 @Bean:<br>
 </li>
 <p>@Bean is similar to @Component but with @bean you can configure the object. such as creating user defined constructor and you can also declare its life cycle(singleton,session,etc).</p>
+To create a Bean we use @Configuration and @Bean and we use @Autowired to bind the bean.<br>
+<img width="335" alt="Screenshot 2024-12-27 at 6 02 34 PM" src="https://github.com/user-attachments/assets/7761691f-2cba-498a-9c81-1678d6746b0f" />
 
 </ol>
