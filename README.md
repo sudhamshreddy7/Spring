@@ -20,7 +20,7 @@ This layer is responsible to connect with database
 ## Additional Packages:
 ### 1. DTO(Data Tranfer object):
 <p>This package is responsible to bind the data that application recieves from the client. ex: it is responsible in transforming the JSON request into object</p>
-The entire mapping is done at controller layer.</br>
+The entire mapping is done at controller layer.<br>
 There are two types of DTO:
 <li>
 Request DTO: It is responsible to map the request to the class object. JSON to Object
@@ -75,7 +75,7 @@ It handles incoming HTTP requests.
 
 <p> It is used to tag the parameters to the variables.
 By default required is set to true.</p>
-To test run the application and the below url</br>
+To test run the application and the below url<br>
 
 http://localhost:8080/payments/100?client=sudhamsh
 
@@ -96,11 +96,15 @@ http://localhost:8080/payments/100?client=sudhamsh
 There are two different ways to create a bean.
 <ol>
 <li>
-<b>@Component:</b>
-<p>Annotations such as @Controller, @Service uses @Component to create Beans</p>
-Other Annotations which uses @Component are @Repository,@RequestMapping,@PutMapping,@GetMapping etc.  
-
+@Component:<br>
 </li>
-<b>@Bean:</b>
+<p>Annotations such as @Controller, @Service uses @Component to create Beans</p>
+Other Annotations which uses @Component are @Repository,@RequestMapping,@PutMapping,@GetMapping etc.
+
+
+<li>
+@Bean:<br>
+</li>
 <p>@Bean is similar to @Component but with @bean you can configure the object. such as creating user defined constructor and you can also declare its life cycle(singleton,session,etc).</p>
+
 </ol>
