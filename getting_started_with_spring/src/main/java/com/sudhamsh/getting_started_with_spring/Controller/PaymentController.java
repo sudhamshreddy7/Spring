@@ -1,6 +1,7 @@
 package com.sudhamsh.getting_started_with_spring.Controller;
 
 import com.sudhamsh.getting_started_with_spring.DTO.PaymentRequest;
+import com.sudhamsh.getting_started_with_spring.DTO.User;
 import com.sudhamsh.getting_started_with_spring.DTO.PaymentResponse;
 import com.sudhamsh.getting_started_with_spring.Service.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,5 +32,9 @@ public class PaymentController {
         paymentResponse.setName(name);
         //return response dto
         return ResponseEntity.ok(paymentResponse);
+    }
+    @GetMapping(path = "/data")
+    public String getData(@RequestBody User user){
+        return (user.getName()+" "+user.getEmail()).toString();
     }
 }
