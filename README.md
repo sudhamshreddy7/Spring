@@ -88,3 +88,4 @@ http://localhost:8080/payments/100?client=sudhamsh
     <li>Example of path parameter is /api?id=123. Here id is Path parameter and 123 is its value.</li>
     <li>example of path variable is /api/fetchData/123. Here 123 is path variable </li>
 </ul>
+<img width="899" alt="Screenshot 2024-12-26 at 2 54 38 PM" src="https://github.com/user-attachments/assets/8543a088-c029-4ed8-b53c-8e60dd29bf51" />
