@@ -111,5 +111,6 @@ To assign or bind a bean to a variable we use @Autowired<br>
 <p>@Bean is similar to @Component but with @bean you can configure the object. such as creating user defined constructor and you can also declare its life cycle(singleton,session,etc).</p>
 To create a Bean we use @Configuration and @Bean and we use @Autowired to bind the bean.<br>
 <img width="335" alt="Screenshot 2024-12-27 at 6 02 34 PM" src="https://github.com/user-attachments/assets/7761691f-2cba-498a-9c81-1678d6746b0f" />
-
 </ol>
+
+The Spring finds Beans using @ComponentScan which is inherited by @SpringBootApplication which is starting point of the application and the other way is @Configuration.
