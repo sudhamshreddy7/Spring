@@ -9,19 +9,24 @@ public class User {
     public String getName() {
         return name;
     }
-    User(){
-        System.out.println("New User is created");
-    }
-    @PostConstruct
-    public void  userCreation(){
-        System.out.println("This message is from PostConstruct");
-    }
-    @PreDestroy
-    public void userDeletion(){
-        System.out.println("This message is from PreDestroy");
-    }
-    @Autowired
+//    User(){
+//        System.out.println("New User is created");
+//    }
+//    @PostConstruct
+//    public void  userCreation(){
+//        System.out.println("This message is from PostConstruct");
+//    }
+//    @PreDestroy
+//    public void userDeletion(){
+//        System.out.println("This message is from PreDestroy");
+//    }
+//    @Autowired
     PaymentResponse paymentResponse;
+
+    @Autowired
+    public void setPaymentResponse(PaymentResponse paymentResponse){
+        this.paymentResponse = paymentResponse;
+    }
     public void setName(String name) {
         this.name = name;
     }

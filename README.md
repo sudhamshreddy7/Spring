@@ -124,3 +124,26 @@ The Spring finds Beans using @ComponentScan which is inherited by @SpringBootApp
 7. @PreDestroy: This annotation is used to run at the time of destroying the bean. Beans are destroyed when you close the IOC. example inserting data into logs, closing db connection etc.
 8. Bean destroy: the bean is Destroyed.<br>
 <img width="360" alt="Screenshot 2024-12-27 at 7 16 42 PM" src="https://github.com/user-attachments/assets/ece72b27-02fc-453a-ac2a-02941b15953d" />
+
+## Dependency Injection:
+<p>It helps to make application loosely coupled and helps to avoid Dependency inversion. for example see class User</p><br>
+<i>Disadvantage of dependency injection are:</i><br>=
+
+1. You cannot make variables immutable. i.e, you cannot use final keyword along with @Autowired
+2. May create null pointer exception. example: When user tries to create object of a component it doesn't do dependency injection which may lead to null pointer exception.<br>
+## types of dependency injection:
+1. field injection (dependency injection is done at the field level)
+2. Setter injection (dependency injection is done at method level we pass the parameter)
+3. Constructor injection (dependency injection is done at constructor level. you can create immutable objects.)
+
+## Disadvantages of dependency injection:
+1. Circular dependency may occur.
+
+# Scope of a Bean:
+1. SingleTon
+2. Prototype
+3. Request
+4. Session
+5. Application
+
+
