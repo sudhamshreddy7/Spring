@@ -113,4 +113,13 @@ To create a Bean we use @Configuration and @Bean and we use @Autowired to bind t
 <img width="335" alt="Screenshot 2024-12-27 at 6 02 34 PM" src="https://github.com/user-attachments/assets/7761691f-2cba-498a-9c81-1678d6746b0f" />
 </ol>
 
-The Spring finds Beans using @ComponentScan which is inherited by @SpringBootApplication which is starting point of the application and the other way is @Configuration.
+The Spring finds Beans using @ComponentScan which is inherited by @SpringBootApplication which is starting point of the application and the other way is @Configuration.<br>
+## LifeCycle of a Bean:
+1. Application Start: It invokes the IOC(Inversion of Controller) which is responsible in maintaining the Bean.
+2. IOC Container Started: It checks for all the @Bean and @Component annotations and scope is declared in @ComponentScan.
+3. Construct the Bean: Before creating the bean the spring framework checks for the dependencies and creates the bean.
+4. Dependency injection into constructed Bean: after creating the bean if there are any dependency beans it creates them and injects them into the bean.
+5. @PostConstruct: This annotation is used to run post construction method after creating the bean. example initializing a map or making a connection to DB etc.
+6. Use the bean: created beans are used.
+7. @PreDestroy: This annotation is used to run at the time of destroying the bean. Beans are destroyed when you close the IOC. example inserting data into logs, closing db connection etc.
+8. Bean destroy: the bean is Destroyed.

@@ -1,5 +1,10 @@
 package com.sudhamsh.getting_started_with_spring.DTO;
 
+import org.springframework.context.annotation.Lazy;
+import org.springframework.stereotype.Component;
+
+@Lazy
+@Component
 public class  PaymentResponse {
     public long getPaymentId() {
         return paymentId;
