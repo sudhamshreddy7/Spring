@@ -146,4 +146,17 @@ The Spring finds Beans using @ComponentScan which is inherited by @SpringBootApp
 4. Session
 5. Application
 
+## SingleTon:
+1. it is the default scope.
+2. Only 1 instance per IOC
+3. Eagerly initialized by the IOC
+## Prototype:
+1. it is created when it is required(lazy initialization).
+2. to declare a component/bean as prototype we use @Scope("prototype") or @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE) both are the same
+## Request:
+1. New object is created for each HTTP request(lazy initialized).
+2. to declare a component/bean as Request we use @Scope("Request")
+3. When a singleton bean depends on request bean it throws an error. to avoid this we use @Scope(value="request" , proxyMode = ScopedProxyMode.TARGET_CLASS) this will create a proxy object for thw mean while.
+## Session:
+1. New object is created for each HTTP session. similar to request. 
 
