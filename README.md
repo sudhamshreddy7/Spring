@@ -162,4 +162,14 @@ The Spring finds Beans using @ComponentScan which is inherited by @SpringBootApp
 
 # @ConditionalOnProperty:
 1. Beans are created based on a condition. Similar to conditional statement.
-2. 
+2. Example:<br>
+   <img width="623" alt="Screenshot 2024-12-30 at 3 44 59 PM" src="https://github.com/user-attachments/assets/ae749210-e83c-485d-a7b0-010586a08e22" /><br>
+   <img width="686" alt="Screenshot 2024-12-30 at 3 45 13 PM" src="https://github.com/user-attachments/assets/81e499cd-0a84-40b5-b3fb-0fec2a93d75d" /><br>
+   <img width="877" alt="Screenshot 2024-12-30 at 3 45 22 PM" src="https://github.com/user-attachments/assets/f76e4ce6-e433-44ae-9713-0ab76310e859" /><br>
+   <img width="821" alt="Screenshot 2024-12-30 at 3 45 29 PM" src="https://github.com/user-attachments/assets/733e1a54-8bca-4a28-82cd-1f98e30752c1" /><br>
+3. Output:<br>
+   <img width="336" alt="Screenshot 2024-12-30 at 3 49 10 PM" src="https://github.com/user-attachments/assets/dd691115-8515-4cb0-9fda-c39dfb51f077" /><br>
+   
+
+
+
