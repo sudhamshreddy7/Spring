@@ -11,6 +11,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import java.util.Objects;
+
 
 public class User {
     public String getName() {
@@ -28,8 +30,17 @@ public class User {
 //        System.out.println("This message is from PreDestroy");
 //    }
 //    @Autowired
-    PaymentResponse paymentResponse;
+    @PostConstruct
+    public void init(){
+        System.out.println("not a new yorker "+ Objects.isNull(newYorker));
+        System.out.println("not a floridian "+ Objects.isNull(floridian));
+    }
+    @Autowired(required = false)
+    NewYorker newYorker;
+    @Autowired(required = false)
+    Floridian floridian;
 
+    PaymentResponse paymentResponse;
     @Autowired
     public void setPaymentResponse(PaymentResponse paymentResponse){
         this.paymentResponse = paymentResponse;

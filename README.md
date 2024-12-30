@@ -160,3 +160,6 @@ The Spring finds Beans using @ComponentScan which is inherited by @SpringBootApp
 ## Session:
 1. New object is created for each HTTP session. similar to request. 
 
+# @ConditionalOnProperty:
+1. Beans are created based on a condition. Similar to conditional statement.
+2. 
