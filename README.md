@@ -169,7 +169,14 @@ The Spring finds Beans using @ComponentScan which is inherited by @SpringBootApp
    <img width="821" alt="Screenshot 2024-12-30 at 3 45 29 PM" src="https://github.com/user-attachments/assets/733e1a54-8bca-4a28-82cd-1f98e30752c1" /><br>
 3. Output:<br>
    <img width="336" alt="Screenshot 2024-12-30 at 3 49 10 PM" src="https://github.com/user-attachments/assets/dd691115-8515-4cb0-9fda-c39dfb51f077" /><br>
-   
+4. As you can see the new_york object is created not the florida.
+5. Advantage: avoiding unwanted generation, unable toggling feature, Saves memory, Faster start time.
+6. Disadvantages: Misconfiguration may happen, May increase the complexity
 
-
-
+# Profile
+1. It is used to maintain multiple profile properties such as QA, Dev and prod.
+2. Using spring.profile.active property you can use different properties for different profiles.
+3. We can declare the profile at the time of run dynamically using mvn spring:boot -Dspring-boot.run.profile-prod or you can declare in application.property file
+4. Or you can choose in POM.xml file.(this is preferred)
+5. @Profile("env") annotation is used to create a bean in a particular environment.
+6. You use multiple profiles at any given time but the last selected profile is selected.
