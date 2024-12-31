@@ -173,10 +173,23 @@ The Spring finds Beans using @ComponentScan which is inherited by @SpringBootApp
 5. Advantage: avoiding unwanted generation, unable toggling feature, Saves memory, Faster start time.
 6. Disadvantages: Misconfiguration may happen, May increase the complexity
 
-# Profile
+# Profile:
 1. It is used to maintain multiple profile properties such as QA, Dev and prod.
 2. Using spring.profile.active property you can use different properties for different profiles.
 3. We can declare the profile at the time of run dynamically using mvn spring:boot -Dspring-boot.run.profile-prod or you can declare in application.property file
 4. Or you can choose in POM.xml file.(this is preferred)
 5. @Profile("env") annotation is used to create a bean in a particular environment.
 6. You use multiple profiles at any given time but the last selected profile is selected.
+
+# Aspect Oriented Programming(AOP):
+1. It helps to perform some tasks before and after the method call
+2. Helps in logging, Transaction Management, Security.
+3. Helps in avoiding the boiler code and increases the reusability of the code.
+4. To use AOP you need to have below dependency in you pom.xml
+```bash
+        <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+```
+5. 
