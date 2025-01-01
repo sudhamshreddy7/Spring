@@ -199,4 +199,5 @@ The Spring finds Beans using @ComponentScan which is inherited by @SpringBootApp
 9. @Before("@args(org.Springframework.stereotype.Service)") it run whenever a method has arguments and the argument has an matching annotation.
 10. @Before("target({class/interface_path})") the method gets invoked whenever you use the class/interface object.
 11. You add use multiple pointers such as @execution/@within, using && , || keywords similar to any boolean operation.
-12. @Pointcut("{pointer}({path})") is used to give custom name to a annotation which you to reduce the boiler code by eleminating the long pointer and path. 
+12. @Pointcut("{pointer}({path})") is used to give custom name to a annotation which you to reduce the boiler code by eleminating the long pointer and path.<br>
+<img width="905" alt="Screenshot 2025-01-01 at 1 05 27 PM" src="https://github.com/user-attachments/assets/e527f787-8c7b-421c-9638-78b5ab6253e1" />
