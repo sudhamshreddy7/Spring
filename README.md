@@ -187,9 +187,16 @@ The Spring finds Beans using @ComponentScan which is inherited by @SpringBootApp
 3. Helps in avoiding the boiler code and increases the reusability of the code.
 4. To use AOP you need to have below dependency in you pom.xml
 ```bash
-        <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-aop</artifactId>
-		</dependency>
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-aop</artifactId>
+</dependency>
 ```
-5. 
+5. To use AOP we use @Aspect(at the class level) and that class contains @Before/After("@execution{path to method/class/package}") and use can use wild cards to.
+6. You can use @within in-place of @execution to run the method within project level such as it can run across all method in @Service/@Component etc
+7. You can also @annotation it matches every method which has a particular annotation.
+8. @Before("args(String,int)") it run whenever a methods arguments matches the mentioned arguments.
+9. @Before("@args(org.Springframework.stereotype.Service)") it run whenever a method has arguments and the argument has an matching annotation.
+10. @Before("target({class/interface_path})") the method gets invoked whenever you use the class/interface object.
+11. You add use multiple pointers such as @execution/@within, using && , || keywords similar to any boolean operation.
+12. @Pointcut("{pointer}({path})") is used to give custom name to a annotation which you to reduce the boiler code by eleminating the long pointer and path. 
