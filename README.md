@@ -6,7 +6,7 @@ This Repo contains detailed instructions about how to start a spring boot applic
 
 ## Controller Layer:
 This layer contains all the end points.</br>
-such as /payment , /payment/mode etc. </br>
+such as /payment , /payment/mode etc. </br> 
 It contains annotations such as @RestController,@Controller</br>
 
 ## Service Layer:
