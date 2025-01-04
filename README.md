@@ -201,3 +201,18 @@ The Spring finds Beans using @ComponentScan which is inherited by @SpringBootApp
 11. You add use multiple pointers such as @execution/@within, using && , || keywords similar to any boolean operation.
 12. @Pointcut("{pointer}({path})") is used to give custom name to a annotation which you to reduce the boiler code by eleminating the long pointer and path.<br>
 <img width="905" alt="Screenshot 2025-01-01 at 1 05 27 PM" src="https://github.com/user-attachments/assets/e527f787-8c7b-421c-9638-78b5ab6253e1" />
+
+# @Transction:
+1. When a resource is shared between multiple parties the system should follow ACID(atomicity, Consistent, Isolation, Durable).
+2. To achieve ACID properties in your code use can use @Transaction annotation which helps you to eleminate the verbose in the code such adding exceptional handling, rollback etc.
+3. To use @Transaction annotation for rdms you need to add the following dependency in POM.xml and need to add the database driver into the pom and also configure the credentials in applications.properties file.
+```bash
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
+```
+4. @Transaction annotation can be added in class level or method level. If you add the annotation at class the annotation gets inherited to all the public methods not the private one.
+5. To use @Transaction annotation the pom should contain the dependency related to AOP because the @transaction internally uses AOP to the code to eleminate the verbose code.
+6. Internally AOP uses @Pointcut and @around to add the code arround the method
+7. 
