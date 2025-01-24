@@ -215,4 +215,28 @@ The Spring finds Beans using @ComponentScan which is inherited by @SpringBootApp
 4. @Transaction annotation can be added in class level or method level. If you add the annotation at class the annotation gets inherited to all the public methods not the private one.
 5. To use @Transaction annotation the pom should contain the dependency related to AOP because the @transaction internally uses AOP to the code to eleminate the verbose code.
 6. Internally AOP uses @Pointcut and @around to add the code arround the method
-7. 
+### Isolation:
+1. It is the most important part of transaction, and it tell how changes made by one transaction visible to other transaction which running in parallel.
+
+
+
+
+## JPA:
+1. To do CRUD operations on DB traditionally we used JDBC to connect to db and do the operations. But using JPA and Hibernate(together called ORM(object relational mapping) Framework) we can directly insert delete and update the data using java without SQL.
+# JDBC:
+1. It provides an interface to connect with DB, Query DB and process the results.
+2. The actual implementation can be found in specific DB drivers such as MYSQL driver, postgresql drivers etc.
+# implementation of JDBC:
+1. load the db class
+2. get connection
+3. execute the query<br>
+Issues with the JDBC:
+1. Need to load the db drivers and need to make a connection every time you execute the query.
+2. Boiler code 
+3. need to handle exception everytime
+4. closing the connection manually and also maintaining the db connection pool.
+<p>Spring boot helps to remove all the boiler code mentioned above by providing JDBC template class</p>
+<p>Before you make changes to code make sure you have updated your pom.xml file by adding jdbc and driver</p>
+The credentials are stored in application.properties file.<br>
+@Repository annotation is used for the class where we do crud operations(by default it handles the exceptions in granular level)<br>
+JdbcTemplate object(@Autowired) is used to do the crud operations on db.
